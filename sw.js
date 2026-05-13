@@ -1,11 +1,12 @@
-const CACHE_NAME = 'jellylegs-v1';
+const CACHE_NAME = 'jellylegs-v2';
 
 // Bestanden die altijd in de cache moeten bij installatie
 const PRECACHE_URLS = [
-  'index.html',
-  'manifest.json',
-  'icons/icon-192x192.png',
-  'icons/icon-512x512.png'
+  './',
+  './index.html',
+  './manifest.json',
+  './icons/icon-192x192.png',
+  './icons/icon-512x512.png'
 ];
 
 // Service Worker installeren

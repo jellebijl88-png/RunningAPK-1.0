@@ -1615,10 +1615,11 @@
             ]}
         ],
 
-        init: async function() {
+init: async function() {
             if ('serviceWorker' in navigator) {
                 try {
-                    await navigator.serviceWorker.register('sw.js');
+                    // Scope expliciet instellen op de huidige map
+                    await navigator.serviceWorker.register('./sw.js', { scope: './' });
                 } catch (err) {}
             }
             
